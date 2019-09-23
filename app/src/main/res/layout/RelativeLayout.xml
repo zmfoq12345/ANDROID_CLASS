@@ -16,13 +16,30 @@
     <Button
         android:layout_width="70dp"
         android:layout_height="35dp"
-        android:layout_toLeftOf ="@+id/design"
-        android:layout_alignBaseline = "@+id/design"/>
+        android:id="@+id/side"
+        android:text="side"
+        android:layout_above ="@+id/design"
+        android:layout_margin="20dp"/>
 
     <Button
         android:layout_width="70dp"
         android:layout_height="35dp"
-        android:layout_toRightOf="@+id/design"
-        android:layout_alignBaseline = "@+id/design"/>
+        android:id="@+id/btn"
+        android:text="btn"
+        android:layout_below="@+id/design"
+        android:layout_alignRight="@+id/design"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/side"
+        android:layout_toLeftOf="@+id/btn"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/side"
+        android:layout_toRightOf= "@+id/btn"/>
+
 
 </RelativeLayout>

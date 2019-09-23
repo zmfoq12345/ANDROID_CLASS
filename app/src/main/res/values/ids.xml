@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <item name="design" type="id" />
+    <item name="side" type="id" />
+    <item name="btn" type="id" />
 </resources>

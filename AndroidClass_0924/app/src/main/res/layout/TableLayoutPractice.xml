@@ -1,0 +1,41 @@
+<!--TableLayout 예제
+    옵션
+        보통 android:stretchColumns="*"을 넣어 꽉 채우게 늘림
+
+    위젯에 적용가능한 옵션
+        layout_span="int" // 늘리기
+        layout_column="int" // 특정 열에 배치하기
+
+-->
+
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="*"
+    tools:ignore="MissingDefaultResource">
+
+    <TableRow>
+        <Button/>
+        <Button/>
+        <Button/>
+    </TableRow>
+
+    <TableRow>
+        <Button
+            android:layout_span="2"/>
+    </TableRow>
+
+    <TableRow>
+        <Button
+            android:layout_column="2"/>
+    </TableRow>
+
+    <TableRow>
+        <Button/>
+        <Button/>
+        <Button/>
+    </TableRow>
+
+</TableLayout>

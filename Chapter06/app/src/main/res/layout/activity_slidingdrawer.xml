@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0F8F7">
+
+<!--
+슬라이딩드로어 : 서랍장 같은것
+손잡이 역할을 하는 위젯 필요 (handle)
+서랍장 내부역학 필요 -레이아웃- (content)
+-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="SlidingDrawer 밖에서도 위젯 사용 가능"
+        android:textSize="20dp"
+        android:gravity="center"/>
+
+    <SlidingDrawer
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="#F8EFFB"
+        android:handle="@id/handle"
+        android:content="@id/content">
+
+<!--
+Handle은 다른 위젯으로도 사용이 가능함
+그러나 위젯의 역할을 사용할 수 없음
+-->
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/handle"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/content">
+
+            <Chronometer
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"/>
+
+            <ProgressBar
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"/>
+
+            <AnalogClock
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+
+    </SlidingDrawer>
+
+</LinearLayout>

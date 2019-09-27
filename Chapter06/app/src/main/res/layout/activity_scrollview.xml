@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<!-- 스크롤뷰 사용하기 전 영역에 위젯 포함 가능-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:text="View Container - scrollPrac"
+        android:textSize="20dp"
+        android:background="#0FFFF0"/>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+<!--
+스크롤뷰에는 하나의 위젯만 사용가능
+수평 스크롤 가능  HorigontalScrollView -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:layout_gravity="left"/>
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"/>
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:layout_gravity="right"/>
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+</LinearLayout>

@@ -18,12 +18,14 @@ TabHost를 쓰기 위해 지켜줘야 할 약간의 규칙들
         android:orientation="vertical">
 <!--        TabWidget, TabContent들 ( FrameLayout을 사용)-->
 <!--        TabWidget은 레이아웃들을 선택할 탭들이 위치하는 곳-->
-        <TabWidget
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@android:id/tabs"></TabWidget>
 
-<!--        그 아래 공간에는 FrameLayout을 사용하여 레이아웃들을 겹쳐서 배치-->
+        <!--        그 아래 공간에는 FrameLayout을 사용하여 레이아웃들을 겹쳐서 배치-->
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></TabWidget>
+
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -32,17 +34,36 @@ TabHost를 쓰기 위해 지켜줘야 할 약간의 규칙들
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="#00FFF0">...</LinearLayout>
+                android:background="#FF0000"
+                android:id="@+id/tab1"
+                android:orientation="horizontal">...</LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="#828253">...</LinearLayout>
+                android:background="#0000FF"
+                android:id="@+id/tab2"
+                android:orientation="horizontal">
+
+                <TextClock
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"></TextClock>
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="#7885F1">...</LinearLayout>
+                android:background="#00FF00"
+                android:id="@+id/tab3"
+                android:orientation="horizontal">
+
+                <AnalogClock
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"></AnalogClock>
+
+            </LinearLayout>
         </FrameLayout>
     </LinearLayout>
 

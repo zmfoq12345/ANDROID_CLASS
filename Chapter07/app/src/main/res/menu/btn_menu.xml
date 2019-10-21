@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/btnMenu1"
+        android:title="버튼 움직여라1">
+
+    </item>
+
+    <item
+        android:id="@+id/btnMenu2"
+        android:title="버튼 움직여라2">
+
+    </item>
+</menu>

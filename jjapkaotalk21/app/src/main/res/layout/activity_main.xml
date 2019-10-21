@@ -64,10 +64,10 @@
             android:textSize="25dp"
             android:gravity="center"/>
         <TextView
+            android:id="@+id/friend_condition"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
             android:text="앱프책 팔꿈치받침대 개꿀따리~"/>
     </LinearLayout>
-
 </LinearLayout>

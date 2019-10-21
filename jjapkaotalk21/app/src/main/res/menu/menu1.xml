@@ -13,6 +13,12 @@
     </item>
 
     <item
+        android:id="@+id/visiblity"
+       android:title="보이기">
+
+    </item>
+
+    <item
         android:id="@+id/setting"
         android:title="전체 설정">
 

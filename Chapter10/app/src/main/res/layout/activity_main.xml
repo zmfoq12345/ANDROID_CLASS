@@ -4,6 +4,66 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/munje"/>
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rowCount="2"
+        android:columnCount="3">
+
+        <RadioGroup>
+            <RadioButton
+                android:id="@+id/num1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.  ㄱ - ㄴ - ㄷ"/>
+
+            <RadioButton
+                android:id="@+id/num2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2.  ㄱ - ㄷ - ㄴ"/>
+
+            <RadioButton
+                android:id="@+id/num3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3.  ㄴ - ㄱ - ㄷ"/>
+
+            <RadioButton
+                android:id="@+id/num4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4.  ㄴ - ㄷ - ㄱ"/>
+
+            <RadioButton
+                android:id="@+id/num5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5.  ㄷ - ㄴ - ㄱ"/>
+        </RadioGroup>
+    </GridLayout>
+
+    <Button
+        android:id="@+id/resume"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="30dp"
+        android:text="제출하기" />
+
+</LinearLayout>
+
+
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -18,3 +78,4 @@
 
 
 </LinearLayout>
+-->

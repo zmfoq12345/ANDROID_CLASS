@@ -17,6 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".SecondActivity" android:label = "Second 액티비티"/>
+        <activity android:name=".ResumeActivity" android:label = "Resume 액티비티"/>
     </application>
 
 </manifest>
